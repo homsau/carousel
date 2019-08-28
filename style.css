@@ -1,0 +1,157 @@
+
+/*-----------------------------*/
+/*----------PORTFOLIO----------*/
+/*-----------------------------*/
+.switcher {
+    padding: 20px 0 0;
+    text-align: right;
+}
+.switcher img {
+    height: 40px;
+    padding: 10px 0;
+}
+.switcher #carousel {
+    padding-right: 10px;
+}
+.carousel.carousel-fade .carousel-item {
+    display: block;
+    opacity: 0;
+    transition: opacity ease-out .7s;
+}
+.carousel.carousel-fade .carousel-item.active {
+    opacity: 1 !important;
+}
+.carousel-controls span {
+    box-shadow: 0px 12px 8px -8px rgba(0,0,0,0.3);
+}
+#myItems.carousel .carousel-control-next, #myItems.carousel .carousel-control-prev {
+    opacity: 1 !important;
+    z-index: 14;
+    margin-bottom: 55px;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+}
+#myItems.carousel .carousel-control-next {
+    border-top-right-radius: 10px;
+}
+#myItems.carousel .carousel-control-next:hover {
+    background: linear-gradient(90deg, transparent, #333);
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+}
+#myItems.carousel .carousel-control-prev {
+    border-top-left-radius: 10px;
+}
+#myItems.carousel .carousel-control-prev:hover {
+    background: linear-gradient(270deg, transparent, #333);
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+}
+#myItems.carousel .carousel-control-next-icon, #myItems.carousel .carousel-control-prev-icon {
+    margin-top: 55px;
+}
+#myItems.carousel .carousel-indicators {
+    bottom: 0 !important;
+    background: rgba(255,255,255,0.5);
+    width: 100%;
+    display: inline-flex;
+    margin: 0 auto !important;
+    padding: 20px 0;
+    /* border: 1px solid #abd4bd; */
+    border-top: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#myItems.carousel .carousel-indicators .active {
+/*     background: #305d44 !important; */
+    background: #333 !important;
+}
+#myItems.carousel .carousel-indicators li {
+    /* box-shadow: 0px 2px 4px 0.5px rgba(0,0,0,0.3); */
+    width: 15px !important;
+    height: 15px !important;
+    background: rgba(255,255,255,0.75) !important;
+    border: 1px solid;
+    border-radius: 10px !important;
+}
+/* @media (max-width: 767px) {
+    .carousel-indicators li {
+        height: 7.5px !important;
+        width: 7.5px !important;
+        margin: 2px !important;
+    }
+} */
+#myItems.carousel .portfolio-item.carousel-item.empty {
+    display: none;
+}
+#myItems.carousel {
+    margin: auto;
+}
+#myItems.carousel .carousel-inner > .carousel-item img {
+    width: 100%;
+    margin: auto;
+}
+#myItems.carousel .carousel-inner {
+    display: flex;
+    height: 400px;
+}
+#myItems.grid .carousel-item {
+    display: block !important;
+    width: 33%;
+    opacity: 1 !important;
+}
+#myItems.grid .carousel-inner {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+}
+#myItems.grid .carousel-inner .carousel-caption {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.carousel:not(.grid) {
+    max-width: 100%;
+    width: 500px;
+}
+.carousel-img img {
+    border-radius: 10px;
+}
+.project-description:focus,
+.carousel-img:focus,
+.caoursel-desc:focus,
+.carousel-img a:focus,
+.carousel-img img:focus {
+    outline: none;
+}
+#portfolio-item:not(.grid-item) {
+    margin: auto;
+}
+.grid-item {
+    display: block;
+    position: relative;
+    width: 30%;
+    margin-bottom: 40px;
+}
+.grid-item.mobile-size {
+    width: 100% !important;
+}
+.grid-item:last-child {
+    margin-right: 0;
+}
+
+.grid-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+.grid .portfolio-row {
+    display: flex;
+}
+#myItems, .carousel-inner {
+    border-radius: 10px;
+}
+#myItems.grid .controls {
+    display: none;
+}
