@@ -2,6 +2,9 @@
 /*-----------------------------*/
 /*----------PORTFOLIO----------*/
 /*-----------------------------*/
+/*-----------------------------*/
+/*----------PORTFOLIO----------*/
+/*-----------------------------*/
 .switcher {
     padding: 20px 0 0;
     text-align: right;
@@ -13,12 +16,12 @@
 .switcher #carousel {
     padding-right: 10px;
 }
-.carousel.carousel-fade .carousel-item {
+.carousel.carousel-slide .carousel-item {
     display: block;
     opacity: 0;
-    transition: opacity ease-out .7s;
+    overflow-x: hidden;
 }
-.carousel.carousel-fade .carousel-item.active {
+.carousel.carousel-slide .carousel-item.active {
     opacity: 1 !important;
 }
 .carousel-controls span {
@@ -27,7 +30,7 @@
 #myItems.carousel .carousel-control-next, #myItems.carousel .carousel-control-prev {
     opacity: 1 !important;
     z-index: 14;
-    margin-bottom: 55px;
+    margin-bottom: 155px;
     -webkit-transition: all 300ms;
     transition: all 300ms;
 }
@@ -51,7 +54,7 @@
     margin-top: 55px;
 }
 #myItems.carousel .carousel-indicators {
-    bottom: 0 !important;
+    bottom: 100px !important;
     background: rgba(255,255,255,0.5);
     width: 100%;
     display: inline-flex;
@@ -90,10 +93,12 @@
 #myItems.carousel .carousel-inner > .carousel-item img {
     width: 100%;
     margin: auto;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 #myItems.carousel .carousel-inner {
     display: flex;
-    height: 400px;
+    height: 500px;
 }
 #myItems.grid .carousel-item {
     display: block !important;
@@ -106,8 +111,18 @@
     flex-flow: row wrap;
     -webkit-flex-flow: row wrap;
 }
+#myItems .carousel-inner {overflow: hidden;}
+#myItems .carousel-inner .carousel-caption {
+    position: relative;
+    /*     background-color: blue; */
+    padding: 20px 0;
+    bottom: 0;
+    left: auto;
+    right: auto;
+    color: #000;
+}
 #myItems.grid .carousel-inner .carousel-caption {
-    position: absolute;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
